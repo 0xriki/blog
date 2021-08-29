@@ -1,0 +1,43 @@
+{{ define "main" }}
+  
+
+<!-- Jumbotron -->
+
+<section class="jumbotron">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Halo, Dunia!</h1>
+    <p class="fs-5 mt-3">Yo! w riki, w lagi belajar tentang dunia IT. Akhir akhir ini w coba belajar tentang web development, game development, dan hal hal lain yang menurut w menarik. W juga udah mencoba bermain CTF dan Boot2Root seperti HackTheBox, TryHackMe, PicoCTF dan lain lain. Selain ngoding dan main CTF w juga suka nonton film, anime, dan youtube. W juga suka dengerin musik lofi gan.</p>
+    <a href="{{.Site.BaseURL}}/about" class="btn btn-primary btn-lg shadow mt-3" role="button" aria-disabled="true">Tentang Saya</a>
+  </div>
+</section>
+
+<!-- Akhir Jumbotron -->
+
+<!-- Latest Artikel -->
+
+<div class="container">
+  <div class="col pb-5">
+    <h2 class="fw-bold display-5">Tulisan Terbaru</h2>
+  </div>
+  {{ range (.Paginate (where .Site.RegularPages "Section" "blog")).Pages }}
+    <div class="card mb-3">
+      <div class="row">
+        <div class="col-4">
+          <img src="img/4.jpg" style="height: 100%;" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h3>{{.Title}}</h3>
+            <small class="text-muted">32 Desember 2022</small>
+            <a class="stretched-link" href="{{.Permalink}}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+  <a href="{{.Site.BaseURL}}/blog" class="btn btn-primary btn-lg shadow mt-3" role="button" aria-disabled="true">Lihat Semua Log</a>
+  </div>
+    
+    <!-- Artikel -->
+    
+{{ end }}

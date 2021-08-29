@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+  
+<div class="container mt-5 pt-5">
+  <div class="col pb-5">
+    <h2 class="fw-bold display-6">Semua Tulisan</h2>
+  </div>
+  {{ range .Pages }}
+  <div class="card mb-3 shadow">
+    <div class="row">
+      <div class="col-4">
+        <img src="{{.Site.BaseURL}}img/4.jpg" style="height: 100%;" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <h3 class="fw-bold">{{.Title}}</h3>
+          <small class="text-muted">{{.Date.Format "02 Jan 2006"}}</small>
+          <a class="stretched-link" href="{{.Permalink}}"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+  
+{{ end }}

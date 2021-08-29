@@ -1,0 +1,84 @@
+.container {
+  width: 55%;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.nav-link {
+  color: #adb5bd;
+} 
+
+.navbar a:hover {
+  color: #d3d3d3;
+}
+
+.log p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+.jumbotron {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card:hover {
+  background-color: #d3d3d3;
+}
+
+
+
+
+footer {
+  background-color: #59A5D8;
+  padding: 2rem;
+  margin-top: 7rem;
+}
+
+.btn {
+  background-color: #59A5D8;
+  border: 1px solid grey;
+}
+
+.luffy {
+  background: url("img/luffy.png");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin-top: -3.8rem;
+}
+
+
+/* Android Style */
+
+@media screen and (max-width: 1024px) {
+  .container{
+    width: 95%;
+  }
+
+  .jumbotron {
+    padding-top: 80px;
+  }
+
+  .card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .log p {
+    font-size: 18px;
+  }
+
+}
