@@ -1,13 +1,40 @@
 {{ define "main" }}
 
 <div class="container mt-5 pt-5">
+  <!-- Ads -->
+  
+  <script type="text/javascript">
+  atOptions = {
+    'key' : '9a4276b320ff0d4da736b3de0f52e2db',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : { }
+  };
+  document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/9a4276b320ff0d4da736b3de0f52e2db/invoke.js"></scr' + 'ipt>');
+  </script>
+  
+  
   <h3 class="fw-bold fs-2">{{.Title}}</h3>
-  <small class="text-muted">{{ .Date.Format "02 Jan 2006" }} | Ditulis oleh Riki ngab</small> 
-  <img src="{{.Site.BaseURL}}img/4.jpg" class="img-fluid mt-3" alt="">
+  <small class="text-muted">{{ .Date.Format "02 Jan 2006" }} | Ditulis oleh Riki ngab</small>
+  <div class="mt-3">
+    {{ with .Params.tags }}
+      {{ range . }}
+        <a href="/tags/{{ . }}" class="text-white nav-link tags">{{ . }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+  <img src="{{.Site.BaseURL}}{{.Params.featured_image}}" class="img-fluid mt-3" alt="">
   <div class="mt-5 log">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, excepturi iste! Praesentium, minima blanditiis doloribus deleniti soluta, sint asperiores a consequuntur sunt necessitatibus veritatis! A in culpa quod quis nostrum distinctio itaque cumque accusamus accusantium inventore reiciendis voluptas eos illum aliquid, beatae mollitia nihil hic iusto esse quam optio ad. Minus laboriosam quis voluptatibus aliquid quae qui ad doloribus culpa fugit eligendi distinctio, explicabo ea voluptatum tempore mollitia reiciendis cumque, temporibus laborum. Fugit, aut amet pariatur dolor velit maxime. Ex doloribus eligendi nam at vitae consectetur sequi beatae eveniet asperiores voluptas rerum provident quisquam nemo quasi sit ipsum officiis, illum in fugit assumenda. Asperiores ea delectus quos quaerat non totam tempora, inventore quas maiores quidem, assumenda consequuntur rem corrupti esse fugiat est commodi facere fuga amet molestias corporis earum vero minima! Laborum eveniet explicabo laudantium ea nisi provident rerum soluta exercitationem, autem officiis natus a itaque ullam voluptatibus impedit. Voluptatibus qui quaerat dolores, voluptatum maxime fuga? Nisi corrupti laborum perspiciatis atque nam vitae reiciendis, veniam alias facere ullam, neque cupiditate quisquam laboriosam fugiat. Optio corporis sed, sit eum id eaque. Quod, qui nostrum! Eligendi esse quia in dolores provident distinctio dolorem odio explicabo nostrum natus, sapiente nesciunt similique quae perspiciatis culpa tempora doloremque illum vero ut sed, iusto assumenda! Eius sunt assumenda quae, dicta obcaecati odit! Ut iusto corrupti, illo delectus deleniti cum labore quibusdam eius dolor, ratione tenetur dolore. Ad fuga, voluptas cumque qui, odio aperiam doloribus quisquam dolor quia, saepe cum aut deleniti voluptatem eum optio alias labore?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quas modi in unde quis debitis adipisci facere omnis quasi nulla, voluptatum molestiae itaque placeat similique minima a quos suscipit. Vero similique dignissimos veniam eaque minima! Ipsa tenetur, dignissimos veritatis qui molestias similique ullam laborum in ab minus reprehenderit, animi cum quae? Earum similique sunt quod tempore ipsa, commodi dolore omnis quasi voluptatibus eligendi quisquam quibusdam animi! Non dolores neque aut laboriosam aliquam aliquid ipsam, nemo error eos ea ipsa quod ipsum libero illo qui similique, est ut at, eaque nesciunt. Repellat cum vitae eos beatae tenetur! Quas architecto, blanditiis quibusdam quam ab quia consequuntur reiciendis officia doloremque illo? Accusantium aut aliquid porro nihil nesciunt sit autem nemo, in, quasi doloremque amet sequi adipisci quos perspiciatis, ipsam voluptate reprehenderit reiciendis consectetur assumenda provident iusto. Soluta nulla repudiandae architecto accusantium est! Alias nemo consectetur repudiandae expedita sint est sit ad vero iure iusto nisi qui et provident, unde consequuntur laudantium assumenda incidunt magnam nostrum rem! Beatae ex magni quibusdam fugit nesciunt velit cumque facilis quo amet optio, repellendus consequatur rerum vero laudantium nobis vitae et autem sit cupiditate? Eum dignissimos debitis earum. Modi expedita quaerat officiis, ex perferendis nulla eaque explicabo velit aspernatur nemo iure non, molestiae ad itaque. Dolore soluta necessitatibus expedita, nemo modi vitae possimus magni recusandae neque nostrum dolores nobis doloremque rerum, aliquid dolorum facere, facilis illum voluptates doloribus saepe deleniti non tempore mollitia. Ut, tempore est voluptates blanditiis dignissimos quam molestiae fuga earum! Nesciunt ut fugiat odio et, velit ullam. Consequatur, cum quod repellendus sunt facere distinctio cumque ducimus ea voluptate eaque placeat atque incidunt culpa. Alias officia, sequi repudiandae, cupiditate soluta est cumque velit, doloribus eaque tenetur itaque. Assumenda quaerat laudantium provident ea magni ipsum quos tempora rem ad cumque doloribus sapiente optio facilis perferendis, dignissimos aut dicta quibusdam. Sed dolorem officiis excepturi eveniet rerum nostrum molestias necessitatibus, aperiam sint dolor laborum repudiandae aut in ducimus autem placeat praesentium, quia totam temporibus, rem quaerat. Magni odit quod quidem consectetur deleniti explicabo, tenetur quaerat perferendis necessitatibus illum et similique veniam, voluptates obcaecati tempora. Vel reiciendis et magni ipsum!</p>
   </div>
+
+  <!-- Ads -->
+
+  <script async="async" data-cfasync="false" src="//pl16574624.effectivecpmgate.com/f2f780a34aef7f8821892eae8ce1f65f/invoke.js"></script>
+  <div id="container-f2f780a34aef7f8821892eae8ce1f65f"></div>
+
 </div>
   
 {{ end }}

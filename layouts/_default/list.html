@@ -2,16 +2,13 @@
 
   
 <div class="container mt-5 pt-5">
-  <script type="text/javascript">
-	atOptions = {
-		'key' : '9a4276b320ff0d4da736b3de0f52e2db',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformat.com/9a4276b320ff0d4da736b3de0f52e2db/invoke.js"></scr' + 'ipt>');
-</script>
+
+  <!-- Ads -->
+
+  <script type='text/javascript' src='//pl16574631.effectivecpmgate.com/2c/e7/b4/2ce7b462f43a7c0844b9ecf82c1e59c7.js'></script>
+
+  <!-- Akhir Ads -->
+
   <div class="col pb-5">
     <h2 class="fw-bold display-6">Semua Tulisan</h2>
   </div>
@@ -25,7 +22,12 @@
         <div class="card-body">
           <h3 class="fw-bold">{{.Title}}</h3>
           <small class="text-muted">{{.Date.Format "02 Jan 2006"}}</small>
-          <a class="stretched-link" href="{{.Permalink}}"></a>
+          <a class="stretched-link" href="{{.Permalink}}"></a><br>
+          {{ with .Params.tags }}
+            {{ range . }}
+              <div class="text-white tags">{{ . }}</div>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
